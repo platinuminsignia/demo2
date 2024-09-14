@@ -1,0 +1,18 @@
+# Tomcat
+server:
+  port: 9902
+# Spring
+spring:
+  application:
+    # 应用名称
+    name: foo
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: localhost:8848
+        namespace: foo
+      config:
+        # 配置中心地址
+        server-addr: localhost:8848
+        namespace: foo
