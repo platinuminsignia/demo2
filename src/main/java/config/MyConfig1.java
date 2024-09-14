@@ -23,10 +23,4 @@ public class MyConfig1 {
         return registrationBean;
     }
 
-    @Bean
-    public ServletRegistrationBean servletRegistrationBean(){
-        ServletRegistrationBean<NeedLoginServlet> registrationBean = new ServletRegistrationBean<>(new NeedLoginServlet(), "/needLogin");
-
-        return registrationBean;
-    }
 }
